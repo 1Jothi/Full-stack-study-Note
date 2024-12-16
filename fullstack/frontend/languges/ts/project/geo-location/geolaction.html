@@ -1,0 +1,9 @@
+<script>
+
+    async function geo_Api(){
+     var geodata=   fetch('https://api.bigdatacloud.net/data/reverse-geocode-client')
+     geodata= await(await geodata).json()
+     console.log(geodata)
+    }
+    geo_Api()
+</script>

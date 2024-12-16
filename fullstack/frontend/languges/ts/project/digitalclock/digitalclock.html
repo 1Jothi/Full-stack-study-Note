@@ -1,0 +1,23 @@
+<h1 id="time"></h1>
+
+<script>
+let time=document.getElementById('time')
+function digitalwatch(){
+    let sec=0
+    let min=0
+    let hou=0
+
+    setInterval(()=>{
+        sec++
+       
+        if(sec==10){
+            min++
+            sec=0
+        }
+        time.innerHTML=`hours:${hou}:munites:${min}:sec${sec}`
+    },1000)
+
+}
+digitalwatch()
+
+</script>

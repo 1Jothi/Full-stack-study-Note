@@ -1,0 +1,8 @@
+var fs=require('fs')
+//fs.mkdirSync('./jhothi')
+//fs.writeFileSync('./jhothi/brk.txt','hjothi had brakfast and in tata idly along with .....')
+//fs.appendFileSync('./jhothi/brk.txt','chatni and samber')
+// let data=fs.readFileSync('./jhothi/brk.txt','utf-8')
+// console.log(data)
+//fs.unlinkSync('./jhothi/d.txt')
+fs.rmdirSync('./d')

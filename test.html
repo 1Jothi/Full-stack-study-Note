@@ -1,0 +1,29 @@
+<form method="post" action="http://localhost:8080/api/capture">
+
+    <input type="text" name="name" id=""><br>
+    <button>submit</button>
+</form>
+<script>
+    async function fun(){
+        var formdata = new FormData();
+formdata.append("name", "raguveer");
+
+var requestOptions = {
+  method: 'POST',
+  body: formdata,
+};
+
+let data=fetch("http://localhost:8080/api/capture", requestOptions)
+console.log(await(await data).text())
+    }
+    fun()
+</script>
+
+
+<script>
+    async function apicaller(){
+       let data= fetch('http://localhost:8080/api/num')
+       console.log(await (await data).json())
+    }
+    apicaller()
+</script>
